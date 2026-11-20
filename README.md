@@ -96,7 +96,7 @@ These figures are reported for **other instruments**, not for this project.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/lucky15426/ADHD.Detection.git
+git clone https://github.com/8868kar/Hackfront-material-
 cd ADHD.Detection
 ```
 
