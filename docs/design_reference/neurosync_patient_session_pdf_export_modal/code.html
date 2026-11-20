@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-tint": "#625e58",
+          "surface-bright": "#fcf9f2",
+          "on-primary-fixed-variant": "#4a4641",
+          "on-surface": "#1c1c18",
+          "primary-container": "#4a4641",
+          "on-primary-container": "#bab4ad",
+          "on-tertiary-container": "#bdb4a5",
+          "tertiary-fixed": "#ece1d1",
+          "tertiary-container": "#4c463a",
+          "on-secondary-container": "#783f25",
+          "on-secondary": "#ffffff",
+          "outline": "#7c766e",
+          "tertiary-fixed-dim": "#cfc5b6",
+          "secondary-fixed": "#ffdbcd",
+          "surface-container-low": "#f6f3ec",
+          "surface-container-highest": "#e5e2db",
+          "inverse-surface": "#31312c",
+          "tertiary": "#353025",
+          "primary-fixed-dim": "#ccc5bf",
+          "on-tertiary-fixed": "#201b11",
+          "on-error-container": "#93000a",
+          "error-container": "#ffdad6",
+          "surface-container": "#f1eee7",
+          "on-secondary-fixed-variant": "#6f381e",
+          "on-primary-fixed": "#1e1b17",
+          "on-background": "#1c1c18",
+          "primary-fixed": "#e9e1da",
+          "on-tertiary-fixed-variant": "#4c463a",
+          "surface-dim": "#dcdad3",
+          "on-error": "#ffffff",
+          "inverse-on-surface": "#f3f0e9",
+          "error": "#ba1a1a",
+          "surface-container-lowest": "#ffffff",
+          "outline-variant": "#cdc5bc",
+          "surface-variant": "#e5e2db",
+          "secondary": "#8b4e33",
+          "background": "#fcf9f2",
+          "surface": "#fcf9f2",
+          "secondary-container": "#feae8c",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed-dim": "#ffb597",
+          "inverse-primary": "#ccc5bf",
+          "on-surface-variant": "#4b463f",
+          "surface-container-high": "#ebe8e1",
+          "on-primary": "#ffffff",
+          "primary": "#33302b",
+          "on-secondary-fixed": "#360f00"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "margin-tablet": "2rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "margin": "3rem",
+          "gutter-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1.25rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "headline-md": [
+            "Outfit"
+          ],
+          "display-lg": [
+            "Outfit"
+          ],
+          "headline-lg": [
+            "Outfit"
+          ],
+          "headline-lg-mobile": [
+            "Outfit"
+          ],
+          "display-lg-mobile": [
+            "Outfit"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Outfit"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-md": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "display-lg": [
+            "3.75rem",
+            {
+              "lineHeight": "4.25rem",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "2.25rem",
+            {
+              "lineHeight": "2.75rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "1.75rem",
+            {
+              "lineHeight": "2.25rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "display-lg-mobile": [
+            "2.5rem",
+            {
+              "lineHeight": "3rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "0.8125rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "0.9375rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "0.6875rem",
+            {
+              "lineHeight": "0.875rem",
+              "letterSpacing": "0.1em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-surface-container-highest/60"><div class="h-20 w-full max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="NeuroSync Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCDbYg37_LElsx2imaBcvGPzlgY3U852eY9V_nn8dSClaf2H5oEIfHR0c9nj6ONC9TxPWutxU36ZDrVuMTbRkvoqOMvDr8PBCqzqui82ShvsHjmAMDRuFGlx7UoPF54js9MpNJkZRAcWvvvtz6lgK65DldmT7bktZS7gXcNnRC_2i0OZM66CZtnkJJS0Usc4UyIy0eTHyd4Ep5rG0vZJVeT4VaUejatnlGds9jHNFs"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">NEUROSYNC</span></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="bg-surface-container-high text-primary rounded-full px-4 py-2 font-medium"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors px-3 py-1.5" data-path="neural-diagnostic" href="#">Neural Diagnostic</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors px-3 py-1.5" data-path="view-history" href="#">View History</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors px-3 py-1.5" data-path="wellness-tracker" href="#">Wellness Tracker</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors px-3 py-1.5" data-path="for-providers" href="#">For Providers</a></nav><div class="flex items-center gap-space-md"><a class="rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest hover:text-primary px-5 py-2 font-label-md text-label-md transition-all" data-path="login" href="#">Log In</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full relative">
+<!-- BACKGROUND SIMULATED VIEW HISTORY PAGE (FROSTED / SUSPENDED BACKDROP) -->
+<div class="w-full max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-lg pb-space-xl opacity-40 blur-[5px] pointer-events-none select-none transition-all duration-300">
+<!-- Trajectory Page Header Mockup -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Longitudinal History • Patient PT-409</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Diagnostic Cadence &amp; Trajectory</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">Multi-site telemetry, semantic latency delta, and biometric acoustic profiles recorded across 18 clinical sessions.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Active Cohort: IRB-A80</div>
+<div class="px-5 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+          Export PDF
+        </div>
+</div>
+</div>
+<!-- Quick Stat Tiles in Background -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mb-space-lg">
+<div class="bg-surface-container-low p-space-md rounded-2xl shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase block mb-1">Acoustic Latency</span>
+<div class="font-headline-md text-headline-md text-primary">142 ms <span class="text-secondary text-body-sm font-normal">(-14ms)</span></div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-2xl shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase block mb-1">Semantic Entropy</span>
+<div class="font-headline-md text-headline-md text-primary">0.184 <span class="text-on-surface-variant text-body-sm font-normal">Normal</span></div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-2xl shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase block mb-1">SCR Biomarker Drift</span>
+<div class="font-headline-md text-headline-md text-primary">0.04 μS <span class="text-secondary text-body-sm font-normal">Stable</span></div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-2xl shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase block mb-1">Overall Stability</span>
+<div class="font-headline-md text-headline-md text-primary">94.8% <span class="text-secondary text-body-sm font-normal">Optimal</span></div>
+</div>
+</div>
+<!-- Fake Table Backdrop -->
+<div class="w-full bg-surface-container-lowest rounded-3xl p-space-lg shadow-sm">
+<div class="h-10 border-b border-surface-container-highest flex items-center justify-between text-outline font-label-sm uppercase">
+<span>Session Code</span>
+<span>Date &amp; Timestamp</span>
+<span>Acoustic Latency</span>
+<span>Variance Index</span>
+<span>Physician Review</span>
+</div>
+<div class="space-y-4 py-4">
+<div class="flex justify-between py-2 border-b border-surface-container text-body-sm text-on-surface">
+<span class="font-semibold">#NS-8921</span>
+<span>Oct 24, 2025 • 10:14 EST</span>
+<span>142 ms</span>
+<span>0.18</span>
+<span class="text-secondary">Dr. Vance (Approved)</span>
+</div>
+<div class="flex justify-between py-2 border-b border-surface-container text-body-sm text-on-surface">
+<span class="font-semibold">#NS-8890</span>
+<span>Oct 17, 2025 • 09:30 EST</span>
+<span>156 ms</span>
+<span>0.22</span>
+<span class="text-secondary">Dr. Vance (Approved)</span>
+</div>
+<div class="flex justify-between py-2 border-b border-surface-container text-body-sm text-on-surface">
+<span class="font-semibold">#NS-8834</span>
+<span>Oct 10, 2025 • 14:02 EST</span>
+<span>158 ms</span>
+<span>0.24</span>
+<span class="text-on-surface-variant">Automated Audit</span>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL BACKDROP OVERLAY -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-sm md:p-space-lg overflow-y-auto bg-primary/40 backdrop-blur-md transition-all duration-300" id="modal-container">
+<!-- CENTRAL FLOATING MODAL DIALOGUE -->
+<div class="relative w-full max-w-[1160px] bg-surface-container-lowest rounded-3xl shadow-2xl flex flex-col overflow-hidden my-auto max-h-[962px]">
+<!-- Top Subtle Bar Accent / Status -->
+<div class="w-full bg-surface-container-low px-space-md md:px-space-xl py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">CLINICAL TELEMETRY EXPORT // HIPAA AUDITED ENCLAVE</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Zero-Knowledge Air-Gap Signature</span>
+</div>
+</div>
+<!-- Modal Main Header -->
+<div class="px-space-md md:px-space-xl pt-space-md pb-space-sm flex items-start justify-between bg-surface-container-lowest">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">description</span>
+<h2 class="font-headline-md text-headline-md text-primary font-medium tracking-tight">Export Patient Diagnostic Report (PDF)</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Generate an authenticated, cryptographically signed longitudinal summary report for <strong class="text-primary font-medium">Session #NS-8921</strong> (Patient <strong class="text-primary font-medium">#PT-409</strong>).</p>
+</div>
+<button aria-label="Close modal" class="w-9 h-9 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-all flex items-center justify-center shrink-0" id="close-modal-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body (Two-Column Master Interface) -->
+<div class="flex-1 overflow-y-auto px-space-md md:px-space-xl py-space-md grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT: Configuration Panel (Col 1-5, ~45%) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Report Profile Selector -->
+<div class="bg-surface-container-low p-space-md rounded-2xl">
+<label class="block font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-2 font-medium">Report Profile Specification</label>
+<div class="relative">
+<select class="w-full h-11 px-4 pr-10 rounded-xl bg-surface-container-lowest text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer" id="profile-selector">
+<option selected="" value="longitudinal">Comprehensive Longitudinal Dossier (Default)</option>
+<option value="executive">Executive Summary &amp; Biomarker Highlights</option>
+<option value="raw">IRB Multi-Site Raw Sensor Data &amp; Entropy</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-2 leading-relaxed">Includes clinical commentary, high-res acoustic spectral wavelets, and vector latency trajectories.</p>
+</div>
+<!-- Date Range & Sessions Included -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-medium">Cohort Temporal Scope</label>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed/50 px-2 py-0.5 rounded-full">Validated Session</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="scope-pill py-2 px-2.5 rounded-xl text-center font-label-md text-label-md transition-all bg-primary text-on-primary font-medium shadow-sm" data-scope="single" type="button">
+                Selected Session<br/><span class="opacity-80 font-normal text-label-sm">#NS-8921</span>
+</button>
+<button class="scope-pill py-2 px-2.5 rounded-xl text-center font-label-md text-label-md transition-all bg-surface-container-low hover:bg-surface-container-high text-on-surface font-medium" data-scope="30d" type="button">
+                Last 30 Days<br/><span class="opacity-80 font-normal text-label-sm">3 Sessions</span>
+</button>
+<button class="scope-pill py-2 px-2.5 rounded-xl text-center font-label-md text-label-md transition-all bg-surface-container-low hover:bg-surface-container-high text-on-surface font-medium" data-scope="90d" type="button">
+                90-Day Arc<br/><span class="opacity-80 font-normal text-label-sm">18 Sessions</span>
+</button>
+</div>
+</div>
+<!-- Content Modules Checklist -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-medium">Diagnostic Telemetry Layers</label>
+<button class="font-label-sm text-label-sm text-secondary hover:underline" id="select-all-modules" type="button">Select All</button>
+</div>
+<div class="space-y-1.5">
+<!-- Item 1 -->
+<label class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1">
+<div class="font-body-md text-body-md text-primary font-medium group-hover:text-secondary transition-colors">Executive Neuro-Equilibrium Summary</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Includes Dr. Elena Vance's Ph.D. clinical impressions &amp; prognosis notes.</div>
+</div>
+</label>
+<!-- Item 2 -->
+<label class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1">
+<div class="font-body-md text-body-md text-primary font-medium group-hover:text-secondary transition-colors">Phonetic Latency &amp; Acoustic Micro-Tremors</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">48kHz vector waveform traces &amp; 142ms verbal onset markers.</div>
+</div>
+</label>
+<!-- Item 3 -->
+<label class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1">
+<div class="font-body-md text-body-md text-primary font-medium group-hover:text-secondary transition-colors">CNN + LSTM Syntax Variance &amp; Semantic Entropy</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Multi-layer language modeling metrics (Variance score: 0.18).</div>
+</div>
+</label>
+<!-- Item 4 -->
+<label class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1">
+<div class="font-body-md text-body-md text-primary font-medium group-hover:text-secondary transition-colors">Multimodal Sensor Telemetry</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Pupillary micro-saccades (Hz) and Galvanic Skin Conductance (SCR).</div>
+</div>
+</label>
+<!-- Item 5 -->
+<label class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group opacity-75">
+<input class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1">
+<div class="font-body-md text-body-md text-primary font-medium group-hover:text-secondary transition-colors">Anonymized IRB Normative Cohort Overlay</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Benchmarked against N=14,200 baseline neuro-typicals (IRB Protocol 2024-B).</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Compliance & Security Accordion -->
+<div class="bg-surface-container-low/70 p-space-md rounded-2xl space-y-3">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider block font-medium">Compliance, Cryptography &amp; PII Safeguards</span>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-body-md text-body-md text-primary block">Watermark Document</span>
+<span class="font-body-sm text-body-sm text-outline">Diagonal 'CONFIDENTIAL MEDICAL RECORD' microprint</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="watermark-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface peer-checked:bg-primary after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-body-md text-body-md text-primary block">De-Identification (Safe Harbor)</span>
+<span class="font-body-sm text-body-sm text-outline">Masks Patient Name, DOB, and geographic metadata</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" id="safeharbor-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface peer-checked:bg-primary after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-body-md text-body-md text-primary block">Cryptographic SHA-256 Audit Seal</span>
+<span class="font-body-sm text-body-sm text-outline">Immutable ledger signature embedded in document footer</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface peer-checked:bg-primary after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- RIGHT: Live Interactive PDF Preview Panel (Col 6-12, ~55%) -->
+<div class="lg:col-span-7 flex flex-col items-center justify-start bg-surface-container-high/40 rounded-2xl p-space-md">
+<!-- Document Preview Control Bar -->
+<div class="w-full flex items-center justify-between pb-3 text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-600"></span>
+<span class="font-semibold text-primary">LIVE VECTOR REPORT PREVIEW</span>
+<span class="text-outline">• Page 1 of 3</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-1 hover:text-primary rounded" title="Fit to width"><span class="material-symbols-outlined text-[18px]">fit_screen</span></button>
+<button class="p-1 hover:text-primary rounded" title="Zoom In"><span class="material-symbols-outlined text-[18px]">zoom_in</span></button>
+</div>
+</div>
+<!-- High-End Clinical Document Sheet (Paper Replica 8.5 x 11 look) -->
+<div class="w-full max-w-[490px] aspect-[1/1.38] bg-white rounded-lg shadow-xl p-6 relative flex flex-col justify-between overflow-hidden text-neutral-800 transition-all duration-300" id="pdf-paper-sheet">
+<!-- Diagonal Watermark Overlay (Conditional Toggle) -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center -rotate-45 select-none z-10" id="watermark-overlay">
+<span class="text-neutral-900/[0.04] font-headline-lg text-4xl font-extrabold uppercase tracking-widest whitespace-nowrap">CONFIDENTIAL MEDICAL RECORD • HIPAA AUDITED</span>
+</div>
+<!-- PDF Header -->
+<div class="relative z-0">
+<div class="flex items-center justify-between pb-3 border-b border-neutral-200">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-md bg-neutral-900 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[14px]">psychology</span>
+</div>
+<span class="font-headline-sm text-sm uppercase tracking-widest text-neutral-900 font-bold">NEUROSYNC CLINICAL</span>
+</div>
+<div class="text-right">
+<div class="text-[9px] font-mono uppercase tracking-wider text-neutral-500 font-semibold">REP-2025-NS-8921-V4</div>
+<div class="text-[8px] text-emerald-800 bg-emerald-50 px-1.5 py-0.5 rounded font-mono inline-block mt-0.5">AIR-GAPPED SHA-256</div>
+</div>
+</div>
+<!-- Subject Metadata Bar -->
+<div class="grid grid-cols-4 gap-2 py-3 bg-neutral-50 rounded mt-3 px-3 border border-neutral-100 text-[10px]">
+<div>
+<span class="text-neutral-400 block text-[8px] uppercase tracking-wider font-semibold">Subject ID</span>
+<span class="font-bold text-neutral-900" id="preview-patient-id">#PT-409</span>
+</div>
+<div>
+<span class="text-neutral-400 block text-[8px] uppercase tracking-wider font-semibold">Age / Biological</span>
+<span class="text-neutral-800" id="preview-patient-age">34 y.o. (Female)</span>
+</div>
+<div>
+<span class="text-neutral-400 block text-[8px] uppercase tracking-wider font-semibold">Attending Fellow</span>
+<span class="text-neutral-800">E. Vance, Ph.D.</span>
+</div>
+<div>
+<span class="text-neutral-400 block text-[8px] uppercase tracking-wider font-semibold">Session Date</span>
+<span class="text-neutral-800">Oct 24, 2025</span>
+</div>
+</div>
+<!-- Executive Summary Section Mockup -->
+<div class="mt-3.5 space-y-1">
+<div class="flex items-center justify-between">
+<span class="text-[9px] uppercase tracking-widest text-neutral-500 font-bold">1.0 Clinical Trajectory Analysis</span>
+<span class="text-[8px] text-neutral-400 font-mono">Status: Diagnostic Equilibrium</span>
+</div>
+<p class="text-[9.5px] leading-relaxed text-neutral-600">
+                  Subject demonstrates notable 12ms reduction in verbal response latency. Acoustic micro-tremor amplitude within 98th percentile of baseline control. Language syntax variance displays strong restorative stabilization (+3.4% vs session NS-8890).
+                </p>
+</div>
+<!-- Visual Waveform Vector Diagram (SVG Chart) -->
+<div class="mt-3 bg-neutral-900 text-white rounded p-3 relative overflow-hidden">
+<div class="flex items-center justify-between text-[8px] font-mono text-neutral-400 mb-1">
+<span>SPECTRAL ACOUSTIC LATENCY (ms)</span>
+<span class="text-amber-400">T_0: 142 ms (Δ -12ms)</span>
+</div>
+<!-- Inline SVG Waveform Curve -->
+<svg class="w-full h-12 text-amber-500/80 stroke-current fill-none" viewbox="0 0 380 60">
+<!-- Background grid lines -->
+<line stroke="#333" stroke-dasharray="2,2" stroke-width="0.5" x1="0" x2="380" y1="15" y2="15"></line>
+<line stroke="#333" stroke-dasharray="2,2" stroke-width="0.5" x1="0" x2="380" y1="30" y2="30"></line>
+<line stroke="#333" stroke-dasharray="2,2" stroke-width="0.5" x1="0" x2="380" y1="45" y2="45"></line>
+<!-- Wave 1: Baseline -->
+<path d="M 0,30 Q 30,10 60,30 T 120,30 T 180,10 T 240,45 T 300,20 T 380,30" opacity="0.6" stroke="#666" stroke-width="1"></path>
+<!-- Wave 2: Current session highlighted -->
+<path d="M 0,35 Q 25,5 50,32 T 100,28 T 160,5 T 210,38 T 270,12 T 330,35 T 380,25" stroke="#E28B67" stroke-width="1.8"></path>
+<!-- Data dot marker -->
+<circle cx="160" cy="5" fill="#E28B67" r="3" stroke="#FFF" stroke-width="1"></circle>
+</svg>
+<div class="flex items-center justify-between text-[7.5px] font-mono text-neutral-400 mt-1">
+<span>0.00s (Prompt Onset)</span>
+<span>0.71s (Phonetic Peak)</span>
+<span>1.42s (Equilibrium Retained)</span>
+</div>
+</div>
+<!-- Key Metrics Grid Mini -->
+<div class="grid grid-cols-3 gap-2 mt-3 pt-2 border-t border-neutral-100 text-center">
+<div class="bg-neutral-50 p-1.5 rounded">
+<span class="block text-[8px] text-neutral-400 font-medium">Cadence Velocity</span>
+<span class="text-[11px] font-bold text-neutral-900">142 WPM</span>
+<span class="block text-[7.5px] text-emerald-600">+8.2% (Fluid)</span>
+</div>
+<div class="bg-neutral-50 p-1.5 rounded">
+<span class="block text-[8px] text-neutral-400 font-medium">Semantic Entropy</span>
+<span class="text-[11px] font-bold text-neutral-900">0.184 σ</span>
+<span class="block text-[7.5px] text-emerald-600">Optimal Class</span>
+</div>
+<div class="bg-neutral-50 p-1.5 rounded">
+<span class="block text-[8px] text-neutral-400 font-medium">Autonomic Stability</span>
+<span class="text-[11px] font-bold text-neutral-900">94.2%</span>
+<span class="block text-[7.5px] text-neutral-600">Nominal Shift</span>
+</div>
+</div>
+</div>
+<!-- PDF Footer: Digital Signature Block & QR Code -->
+<div class="relative z-0 pt-3 border-t border-neutral-200 mt-2">
+<div class="flex items-end justify-between">
+<div>
+<div class="text-[8.5px] font-semibold text-neutral-900">Digitally Verified &amp; Signed</div>
+<div class="text-[8px] text-neutral-500 font-serif italic mb-0.5">Elena Vance, Ph.D., Lead Neuro-Scientist</div>
+<div class="text-[7.5px] font-mono text-neutral-400">HASH: 9e8a71c89f5...d82a170b • 2025-10-24 14:18:02 UTC</div>
+</div>
+<!-- Simulated Micro QR & Stamp -->
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 border border-neutral-300 p-0.5 flex flex-wrap gap-0.5 bg-neutral-50 rounded">
+<!-- Geometric QR Simulation -->
+<div class="w-2.5 h-2.5 bg-neutral-900"></div>
+<div class="w-1.5 h-1.5 bg-neutral-900 ml-auto"></div>
+<div class="w-1.5 h-1.5 bg-neutral-900"></div>
+<div class="w-2.5 h-2.5 bg-neutral-900 ml-auto"></div>
+</div>
+<div class="border border-neutral-400 px-1 py-0.5 rounded text-[7px] font-bold text-neutral-600 uppercase tracking-widest text-center">
+                    IRB VALID<br/>SEAL
+                  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-3 text-center">
+<span class="text-[11px] font-body-sm text-outline">Click preview to toggle high-magnification inspector mode</span>
+</div>
+</div>
+</div>
+<!-- Modal Footer (Action Tray) -->
+<div class="px-space-md md:px-space-xl py-space-md bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- Left: Format Specs / Payload Size -->
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">picture_as_pdf</span>
+<span class="font-medium text-primary">PDF/X-4</span> (Print-Ready)
+          </span>
+<span class="text-outline">•</span>
+<span>Vector Graphics</span>
+<span class="text-outline">•</span>
+<span>AES-256 Encrypted</span>
+<span class="text-outline">•</span>
+<span class="font-mono text-outline">~2.4 MB</span>
+</div>
+<!-- Right: Secondary & Primary Actions -->
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<button class="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-full text-secondary hover:bg-surface-container-high transition-colors font-label-md text-label-md" id="share-ehr-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+            Push to Epic / EHR
+          </button>
+<button class="px-5 py-2.5 rounded-full border border-outline-variant hover:bg-surface-container-high text-primary transition-all font-label-md text-label-md" id="cancel-btn" type="button">
+            Cancel
+          </button>
+<button class="px-6 py-2.5 rounded-full bg-primary hover:bg-[#201d1a] text-on-primary transition-all shadow-md hover:shadow-lg flex items-center gap-2 group font-label-md text-label-md" id="download-trigger-btn" type="button">
+<span class="material-symbols-outlined text-[18px] group-hover:translate-y-0.5 transition-transform">download</span>
+<span>Download Clinical PDF</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive Controls & State Handlers
+  const modalContainer = document.getElementById('modal-container');
+  const closeBtn = document.getElementById('close-modal-btn');
+  const cancelBtn = document.getElementById('cancel-btn');
+  const watermarkToggle = document.getElementById('watermark-toggle');
+  const watermarkOverlay = document.getElementById('watermark-overlay');
+  const safeHarborToggle = document.getElementById('safeharbor-toggle');
+  const previewPatientId = document.getElementById('preview-patient-id');
+  const previewPatientAge = document.getElementById('preview-patient-age');
+  const scopePills = document.querySelectorAll('.scope-pill');
+  const selectAllBtn = document.getElementById('select-all-modules');
+  const downloadBtn = document.getElementById('download-trigger-btn');
+  const ehrBtn = document.getElementById('share-ehr-btn');
+
+  // Watermark toggle listener
+  if (watermarkToggle && watermarkOverlay) {
+    watermarkToggle.addEventListener('change', (e) => {
+      watermarkOverlay.style.display = e.target.checked ? 'flex' : 'none';
+    });
+  }
+
+  // Safe Harbor / De-identification toggle
+  if (safeHarborToggle && previewPatientId && previewPatientAge) {
+    safeHarborToggle.addEventListener('change', (e) => {
+      if (e.target.checked) {
+        previewPatientId.textContent = '#ANON-990-X';
+        previewPatientAge.textContent = '30-39 (Decade Tier)';
+      } else {
+        previewPatientId.textContent = '#PT-409';
+        previewPatientAge.textContent = '34 y.o. (Female)';
+      }
+    });
+  }
+
+  // Scope Pill Selection
+  scopePills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      scopePills.forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        p.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+      pill.classList.remove('bg-surface-container-low', 'text-on-surface');
+      pill.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    });
+  });
+
+  // Select all modules
+  if (selectAllBtn) {
+    selectAllBtn.addEventListener('click', () => {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(cb => cb.checked = true);
+      if (watermarkOverlay) watermarkOverlay.style.display = 'flex';
+    });
+  }
+
+  // Download simulation with micro feedback
+  if (downloadBtn) {
+    downloadBtn.addEventListener('click', () => {
+      const originalHTML = downloadBtn.innerHTML;
+      downloadBtn.innerHTML = `
+        <span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span>
+        <span>Signing &amp; Compiling...</span>
+      `;
+      downloadBtn.classList.add('opacity-90');
+      
+      setTimeout(() => {
+        downloadBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[18px] text-emerald-400">check_circle</span>
+          <span>Downloaded (2.4 MB)</span>
+        `;
+        setTimeout(() => {
+          downloadBtn.innerHTML = originalHTML;
+          downloadBtn.classList.remove('opacity-90');
+        }, 2200);
+      }, 1200);
+    });
+  }
+
+  // EHR transfer feedback
+  if (ehrBtn) {
+    ehrBtn.addEventListener('click', () => {
+      const orig = ehrBtn.innerHTML;
+      ehrBtn.innerHTML = `
+        <span class="material-symbols-outlined text-[16px] text-emerald-600">done_all</span>
+        Dispatched to Epic Vault
+      `;
+      setTimeout(() => {
+        ehrBtn.innerHTML = orig;
+      }, 2500);
+    });
+  }
+
+  // Close handlers
+  const closeModal = () => {
+    if (modalContainer) {
+      modalContainer.classList.add('opacity-0', 'pointer-events-none');
+    }
+  };
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+</script></main><footer class="w-full bg-surface-container-low border-t border-surface-container-highest/40 py-margin"><div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="NeuroSync Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCDbYg37_LElsx2imaBcvGPzlgY3U852eY9V_nn8dSClaf2H5oEIfHR0c9nj6ONC9TxPWutxU36ZDrVuMTbRkvoqOMvDr8PBCqzqui82ShvsHjmAMDRuFGlx7UoPF54js9MpNJkZRAcWvvvtz6lgK65DldmT7bktZS7gXcNnRC_2i0OZM66CZtnkJJS0Usc4UyIy0eTHyd4Ep5rG0vZJVeT4VaUejatnlGds9jHNFs"/><span class="font-headline-sm text-headline-sm tracking-wider uppercase text-primary">NEUROSYNC</span></div><div class="font-body-sm text-body-sm text-on-surface-variant">© 2025 NeuroSync Clinical Technologies. All rights reserved. High-Precision Cognitive Diagnostics.</div><div class="flex items-center gap-space-md"><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Architecture</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Clinical Validation</a></div></div></footer></body></html>
